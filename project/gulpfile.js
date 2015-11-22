@@ -8,3 +8,7 @@ gulp.task('js', function() {
 		.pipe(source('bundle.js'))
 		.pipe(gulp.dest('.'));
 });
+
+gulp.task('watch', function() {
+	gulp.watch('js/*.js', ['js']);
+});
