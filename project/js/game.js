@@ -1,11 +1,15 @@
-events = require('./pubsub');
-Entity = require('./entities');
+var events = require('./pubsub');
+var Entity = require('./entities');
+var map = require('./map');
 
 var state = {};
 
 var init = function() {
 
 	state.player = new Entity(50, 50);
+	state.map = map
+
+	console.log(map);
 
 	events.on('input', function(data) {
 		if(data.action == 'up') {
