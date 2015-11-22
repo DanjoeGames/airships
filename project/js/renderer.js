@@ -22,7 +22,7 @@ var init = function() {
 
 	stage.addChild(context);
 
-	stage.addChild(context)
+	stage.addChild(context);
 
 	events.on('gamestate', function(data) {
 

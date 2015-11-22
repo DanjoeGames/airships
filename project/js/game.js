@@ -7,6 +7,15 @@ var state = {};
 var init = function() {
 
 	state.player = new Entity(50, 50);
+
+	/*
+	 * when the map gets bigger and we move this code to the server
+	 * we won't be able to send the map every frame
+	 *
+	 * Consider seding whole map initially, 
+	 * then only partial map updates
+	 * 
+	 */
 	state.map = map
 
 	console.log(map);
